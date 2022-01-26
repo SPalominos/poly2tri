@@ -58,7 +58,6 @@ jobs:
             -P deploy \
             -Dmaven.test.skip=true \
             deploy
-            -Dusername=$GITHUB_ACTOR -Dpassword=$GITHUB_TOKEN
         env:
           MAVEN_USERNAME: ${{ secrets.OSSRH_USERNAME }}
           MAVEN_PASSWORD: ${{ secrets.OSSRH_TOKEN }}
